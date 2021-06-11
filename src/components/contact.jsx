@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import emailjs from 'emailjs-com'
+import {sendEmail} from './emailing.jsx'
 
 const initialState = {
   name: '',
@@ -7,30 +7,23 @@ const initialState = {
   message: '',
 }
 export const Contact = (props) => {
-  const [{ name, email, message }, setState] = useState(initialState)
+  const [{ name, email, message, }, setState] = useState(initialState)
+  const [alert, setAlert] = useState("")
 
   const handleChange = (e) => {
     const { name, value } = e.target
     setState((prevState) => ({ ...prevState, [name]: value }))
   }
   const clearState = () => setState({ ...initialState })
-
+console.log(name, email, message)
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(name, email, message)
-    emailjs
-      .sendForm(
-        'YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', e.target, 'YOUR_USER_ID'
-      )
-      .then(
-        (result) => {
-          console.log(result.text)
-          clearState()
-        },
-        (error) => {
-          console.log(error.text)
-        }
-      )
+    clearState()
+  //  sendEmail({email : email, name : name, message : message})
+   setAlert("Thank You " +name+ "! We will respond to you shortly.")
+   setTimeout(()=> {
+    setAlert("")
+   }, 3000)
   }
   return (
     <div>
@@ -45,6 +38,7 @@ export const Contact = (props) => {
                   get back to you as soon as possible.
                 </p>
               </div>
+              {alert && <p className="alert alert-success">{alert}</p>}
               <form name='sentMessage' validate onSubmit={handleSubmit}>
                 <div className='row'>
                   <div className='col-md-6'>
@@ -56,6 +50,7 @@ export const Contact = (props) => {
                         className='form-control'
                         placeholder='Name'
                         required
+                        value={name}
                         onChange={handleChange}
                       />
                       <p className='help-block text-danger'></p>
@@ -70,6 +65,7 @@ export const Contact = (props) => {
                         className='form-control'
                         placeholder='Email'
                         required
+                        value={email}
                         onChange={handleChange}
                       />
                       <p className='help-block text-danger'></p>
@@ -84,6 +80,7 @@ export const Contact = (props) => {
                     rows='4'
                     placeholder='Message'
                     required
+                    value={message}
                     onChange={handleChange}
                   ></textarea>
                   <p className='help-block text-danger'></p>
@@ -122,7 +119,18 @@ export const Contact = (props) => {
               </p>
             </div>
           </div>
-          <div className='col-md-12'>
+          <iframe
+                    width="100%"
+                    height="450"
+                    frameBorder="0"
+                    style={{ border: 0 }}
+                    allowFullScreen=""
+                    aria-hidden="false"
+                    tabIndex="0"
+                    title="map"
+                    src="https://maps.google.com/maps?q=109%20Javelin%20Avenue,%20Castle%20Vale,%20Birmingham%20B35%207LH&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+      
+          {/* <div className='col-md-12'>
             <div className='row'>
               <div className='social'>
                 <ul>
@@ -144,19 +152,9 @@ export const Contact = (props) => {
                 </ul>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
-      <div id='footer'>
-        <div className='container text-center'>
-          <p>
-            &copy; 2020 Issaaf Kattan React Land Page Template. Design by{' '}
-            <a href='http://www.templatewire.com' rel='nofollow'>
-              TemplateWire
-            </a>
-          </p>
-        </div>
       </div>
-    </div>
   )
 }
