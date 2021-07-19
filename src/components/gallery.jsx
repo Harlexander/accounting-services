@@ -1,7 +1,7 @@
 export const Gallery = (props) => {
   return (
     <div id='sectors' className='text-center'>
-      <div className='container'>
+      <div className='container' style={{paddingTop : "80px"}}>
         <div className='section-title'><br/>
           <h2>SECTORS WE COVER</h2>
           <p>

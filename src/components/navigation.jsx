@@ -15,9 +15,7 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
-            BBGM
-          </a>{' '}
+            <img src="img/logo.png" className="" height="60px" />
         </div>
 
         <div
@@ -26,27 +24,27 @@ export const Navigation = (props) => {
         >
           <ul className='nav navbar-nav navbar-right'>
             <li>
-              <a href='#' className='page-scroll'>
+              <a href='/#' className='page-scroll'>
                 Home
               </a>
             </li>
             <li>
-              <a href='#about' className='page-scroll'>
+              <a href='/#about' className='page-scroll'>
                 About
               </a>
             </li>
             <li>
-              <a href='#services' className='page-scroll'>
-                Services
-              </a>
-            </li>
-            <li>
-              <a href='#sectors' className='page-scroll'>
+              <a href='/#sectors' className='page-scroll'>
                 Sectors
               </a>
             </li>
             <li>
-              <a href='#contact' className='page-scroll'>
+              <a href='/#services' className='page-scroll'>
+                Services
+              </a>
+            </li>
+            <li>
+              <a href='/#contact' className='page-scroll'>
                 Contact
               </a>
             </li>

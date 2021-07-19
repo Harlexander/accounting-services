@@ -1,42 +1,45 @@
-import { useState, useEffect } from 'react'
-import { Navigation } from './components/navigation'
-import { Header } from './components/header'
-// import { Features } from './components/features'
-import { About } from './components/about'
-import { Services } from './components/services'
-import { Service } from './components/service'
-import { Gallery } from './components/gallery'
-import { Testimonials } from './components/testimonials'
-import { Team } from './components/Team'
-import { Contact } from './components/contact'
+import Home from "./pages/home"
+import { useEffect, useState } from "react"
+import {Switch, Route} from "react-router-dom"
+import Bookkeeping from "./pages/bookkeeping"
+import Budget from "./pages/budget"
+import Payroll from "./pages/payroll"
+import Tax from "./pages/tax"
+import Vat from "./pages/vat"
+import { Navigation } from "./components/navigation"
+import { Contact } from "./components/contact"
 import JsonData from './data/data.json'
-import SmoothScroll from 'smooth-scroll'
-
-export const scroll = new SmoothScroll('a[href*="#"]', {
-  speed: 1000,
-  speedAsDuration: true,
-})
 
 const App = () => {
   const [landingPageData, setLandingPageData] = useState({})
   useEffect(() => {
     setLandingPageData(JsonData)
   }, [])
-
   return (
-    <div>
-      <Navigation />
-      <Header data={landingPageData.Header} />
-      {/* <Features data={landingPageData.Features} /> */}
-      <About data={landingPageData.About} />
-      <Services data={landingPageData.Services} />
-      <Gallery />
-      <Service data={landingPageData.Services} />
-      <Testimonials data={landingPageData.Testimonials} />
-      <Team data={landingPageData.Team} />
-      <Contact data={landingPageData.Contact} />
-    </div>
+    <>
+    <Navigation/>
+    <Switch>
+      <Route path="/" exact>
+      <Home/>
+      </Route>
+      <Route path="/Bookkeeping Services">
+      <Bookkeeping/>
+      </Route>
+      <Route path="/Budgeting and Forecasting">
+      <Budget/>
+      </Route>
+      <Route path="/Payroll Services">
+      <Payroll/>
+      </Route>
+      <Route path="/Self-assessment Tax Returns">
+      <Tax/>
+      </Route>
+      <Route path="/Vat Registration and Returns">
+      <Vat/>
+      </Route>
+    </Switch>
+   <Contact data={landingPageData.Contact} />
+   </>
   )
 }
-
 export default App

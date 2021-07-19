@@ -18,6 +18,15 @@ export const Services = (props) => {
                 </div>
               ))
             : 'loading'}
+            <div className='col-md-3'>
+                  {' '}
+                  <i className="fa">
+                  <img  src="/img/portfolio/nomisma.png" height="27px"/>
+                  </i>
+                  <div className='service-desc'>
+                    <h3>Nomisma</h3>
+                  </div>
+                </div>
         </div>
       </div>
     </div>

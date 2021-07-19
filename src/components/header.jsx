@@ -10,7 +10,7 @@ export const Header = (props) => {
                   {props.data ? props.data.title : 'Loading'}
                   <span></span>
                 </h1>
-                <p>{props.data ? props.data.paragraph : 'Loading'}</p>
+                <p>At BGGM Finance, We are available to help with your accountancy and financial services need by providing support to make your good business grows. <br/> We use market leading cloud-based accountancy platforms to deliver maximum efficiency and features to help you run your business more effectively. <br /> We serve a variety of micro, small, and medium-sized businesses, including limited companies and charities.</p>
                 <a
                   href='#features'
                   className='btn btn-custom btn-lg page-scroll'

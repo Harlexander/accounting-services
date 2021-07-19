@@ -99,7 +99,7 @@ console.log(name, email, message)
                 <span>
                   <i className='fa fa-map-marker'></i> Address
                 </span>
-                {props.data ? props.data.address : 'loading'}
+                 {props.data ? props.data.address : 'loading'}
               </p>
             </div>
             <div className='contact-item'>
@@ -107,7 +107,7 @@ console.log(name, email, message)
                 <span>
                   <i className='fa fa-phone'></i> Phone
                 </span>{' '}
-                {props.data ? props.data.phone : 'loading'}
+                <a href={`tel:{props.data ? props.data.phone : 'loading'}`}>{props.data ? props.data.phone : 'loading'}</a> 
               </p>
             </div>
             <div className='contact-item'>
@@ -115,8 +115,9 @@ console.log(name, email, message)
                 <span>
                   <i className='fa fa-envelope-o'></i> Email
                 </span>{' '}
-                {props.data ? props.data.email : 'loading'}
-              </p>
+                <a href={`mailto:info@bggm.co.uk`}>{props.data ? props.data.email : 'loading'}</a>
+                </p>
+
             </div>
           </div>
           <iframe

@@ -1,8 +1,8 @@
 {
     "Header": {
-
         "title": "BGGM Finance.",
-        "paragraph": "At BGGM Finance, We are available to help with your accountancy and financial services need by providing support to make your good business grows. We usemarket leading cloud-based accountancy platforms to deliver maximum efficiencyand features to help you run your business more effectively. We serve a variety omicro, small, and medium-sized businesses, including limited companies and charities."
+        "logo" : "img/logo.png",
+        "paragraph": "At BGGM Finance, We are available to help with your accountancy and financial services need by providing support to make your good business grows. We use market leading cloud-based accountancy platforms to deliver maximum efficiency and features to help you run your business more effectively. <br /> We serve a variety of micro, small, and medium-sized businesses, including limited companies and charities."
     },
     "About": {
         "paragraph": "With over twenty-five years in accountancy and Bookkeeping practice, BGGM Finance team leaders provide financial and management accounting to support you and your business. We provide reliable, accurate and personalised services to individual clients and diverse business sectors.",
@@ -26,32 +26,50 @@
         {
             "icon": "fa fa-money",
             "name": "Moneysoft"
-        },
-        {
-            "icon": "fa fa-acount",
-            "name": "Nomisma"
         }
     ],
+    "Service" : [
+    {
+        "title" : "Payroll Services",
+        "wording" : "We help with paying your staff promptly, compliance with laws, payroll taxes and deductions while you focus your time and resources on running your business. We take away the nightmare of processing payroll for most small and medium size enterprises using the best resources and technology to give you peace of mind."
+    },
+    {
+        "title" : "Bookkeeping Services",
+        "wording" : "We can prepare and submit your accounts for you. We will discuss all your figures and answer any questions you may have about your accounts. We provide a full range of bookkeeping services including maintaining cashbooks for sole traders, purchase ledgers entry, sales ledger accounting, trial balance and balance sheet, etc."
+    },
+    {
+        "title" : "Budgeting and Forecasting",
+        "wording" : "We can prepare and submit your accounts for you. We will discuss all your figures and answer any questions you may have about your accounts. We provide a full range of bookkeeping services including maintaining cashbooks for sole traders, purchase ledgers entry, sales ledger accounting, trial balance and balance sheet, etc."
+    },
+    {
+        "title" : "Vat Registration and Returns",
+        "wording" : "Our team assists with VAT registration, planning, administration control, and reconciliation process. We ensure you file accurate VAT returns on time by ensuring you do not make overpayments. Our VAT registered business clients benefit from the guidance we provide to the ever-changing regulations and growing demands of HMRC which makes VAT compliance a complex process."
+    },
+    {
+        "title" : "Self-Assessment Tax Returns",
+        "wording" : "Our team will help if you work for yourself, have other sources of income such as a property, make a significant gain when you sell an asset, or earn a salary above £100k then you need to report what you earn to HMRC. Income from money from renting out a property, tips and commission, income from savings, investments and dividends, foreign income needs to be declared to the HMRC."
+    }
+],
     "Testimonials": [
         {
-            "img": "img/testimonials/03.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
+            "img": "Director",
+            "text": "\"I am satisfied with the services provided to us by BGGM Finance team over the past 4 years they took over our accounts. They are prompt to answer our queries in a professional manner.\"",
+            "name": "Dannitom Investments Ltd"
         },
         {
-            "img": "img/testimonials/04.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
+            "img": "Sole trader",
+            "text": "\"Amazing service always! Prompt replies to emails and very professional. Would recommend them to any person seeking accurate, reliable, and fast service. Keep up the good work.\"",
+            "name": "James Smith"
         },
         {
-            "img": "img/testimonials/05.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "John Doe"
+            "img": "Director",
+            "text": "\"Ed and his team are exemplary, professional, and reliable accountants. I have no hesitation in recommending them as I have confidence in the standard of work, they have done for me in the past 5 years.\"",
+            "name": "International Resourcing Ltd"
         },
         {
-            "img": "img/testimonials/06.jpg",
-            "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
-            "name": "Johnathan Doe"
+            "img": "CIS Subcontractor ",
+            "text": "\"I have used BGGM finance bookkeeping services for 6 + years now and have always been pleased with all that has been provided to us. Ed and his team are receptive, responsive and a pleasure to work with.\"",
+            "name": "Maureen Jones"
         }
     ],
     "Team": [{
