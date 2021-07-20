@@ -120,7 +120,7 @@ console.log(name, email, message)
 
             </div>
           </div>
-          {/*<iframe
+          <iframe
                     width="100%"
                     height="450"
                     frameBorder="0"
@@ -129,8 +129,7 @@ console.log(name, email, message)
                     aria-hidden="false"
                     tabIndex="0"
                     title="map"
-                    src="https://maps.google.com/maps?q=1st%20floor%20north%20westgate%20house,%20harlow,%20essex,%20england,%20cm20%201ys&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
-      */}
+                    src="https://www.google.com/maps/d/embed?mid=1ne57V8kZMJ4AgnXygP4PiRUQmJWVe1Ga"></iframe>
           {/* <div className='col-md-12'>
             <div className='row'>
               <div className='social'>
